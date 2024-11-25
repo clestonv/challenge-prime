@@ -56,6 +56,7 @@ Cypress.Commands.add('createProfile', ({nome, telefone, email, cep, numero, rua}
     cy.get('input[value="appium"]').click();
 
     cy.get('button:eq(1)').click()
+    cy.wait(2000)
 });
 
 Cypress.Commands.add('logout', ()=> {
